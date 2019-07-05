@@ -4,6 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack --mode production",
     "serve": "webpack-dev-server --mode development"
   },
   "author": "",
@@ -25,4 +27,3 @@
   },
   "dependencies": {}
 }
-

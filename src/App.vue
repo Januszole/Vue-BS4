@@ -1,6 +1,11 @@
 <template>
     <div id="app">
-        {{ message }}
+        <input
+                v-model="message"
+                type="text">
+        <h2 class="message">{{ message }}</h2>
+        <h3>Some Other Message</h3>
+
     </div>
 </template>
 
@@ -8,14 +13,14 @@
     export default {
         data() {
             return {
-                message: 'Hello :-)',
+                message: 'Hello world!',
             };
         },
     };
 </script>
 
 <style>
-    #app {
+    .message {
         font-size: 18px;
         font-family: 'Roboto', sans-serif;
         color: blue;

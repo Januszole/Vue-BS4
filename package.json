@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack --mode production",
+    "build": "npm run clean && webpack --mode development",
     "serve": "webpack-dev-server --mode development"
   },
   "author": "",
